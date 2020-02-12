@@ -1,9 +1,12 @@
-def even_or_odd():
-    number = int(input("Enter a number : "))
+def even_or_odd(number):   
     if number%2 == 0:
-        print(number,"is a Even number")
+        answer = f"{number} is a Even number"
     else:
-        print(number,"is a Odd number")
+        answer = f"{number} is a Odd number"
+    return answer
 
-even_or_odd()
-    
+result_even = even_or_odd(4)
+result_odd = even_or_odd(3)
+
+print(result_even)
+print(result_odd)
