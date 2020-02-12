@@ -1,8 +1,13 @@
-def square():
-    num = int(input("Enter the square size : "))
-    for i in range(num): #rows - outer loop
-        for j in range(num): #number of spaces
+def square(size):
+    return_result= ''
+    for row in range(size):
+        for column in range(size):
             print('#', end='')
         print()
+    return return_result
 
-square()
+square_size1 = square(2)
+square_size2 = square(4)
+
+print(square_size1)
+print(square_size2)
