@@ -1,15 +1,15 @@
-def longest_word(word): 
-    print("The longest word is : ")
-    words = list(word.split(" "))
+def longest_word(long_word=[]): 
+    sentence = long_word
     length = []
-    for i in words:
-        length.append(len(i))
+    for max_word_length in sentence:
+        length.append(len(max_word_length))
     maximum = max(length)
     returnlist = []
-    for j in words:
-        if len(j) == maximum:
-            returnlist.append(j)
-            list_word = j
-            print(list_word)
-            
-longest_word(input("Enter the Desired Sentence : "))
+    for max_word in sentence:
+        if len(max_word) == maximum:
+            returnlist.append(max_word)
+            list_word = max_word
+    return list_word
+
+long_word_result= longest_word(["the","quick","brown","fox","ate","my","chicken"])
+print(long_word_result)
