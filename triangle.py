@@ -1,13 +1,8 @@
 def triangle(number):
-    return_result = ''
-    for column in range(number):
-        for row in range(column + 1):
-            print('#', end = ' ')
-        print()
-    return return_result
+    for row in range(1, number+1):
+        print("# "*row)
 
-triangle_result1 = triangle(2)
-triangle_result2 = triangle(4)
 
-print(triangle_result1)
-print(triangle_result2)
+if __name__ == "__main__":
+    triangle(2)
+    triangle(4)

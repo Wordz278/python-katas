@@ -1,4 +1,4 @@
-def longest_word(long_word=[]): 
+def longest_word(long_word=[]):
     sentence = long_word
     length = []
     for max_word_length in sentence:
@@ -8,8 +8,10 @@ def longest_word(long_word=[]):
     for max_word in sentence:
         if len(max_word) == maximum:
             returnlist.append(max_word)
-            list_word = max_word
-    return list_word
+    print("\n".join(returnlist))
+    return "done"
 
-long_word_result= longest_word(["the","quick","brown","fox","ate","my","chicken"])
-print(long_word_result)
+
+if __name__ == "__main__":
+    longest_word(["the", "quick", "brown", "fox", "ate", "my", "chickens"])
+    longest_word(["once", "upon", "a", "time"])

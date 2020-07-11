@@ -1,6 +1,6 @@
-def hello_function(name):
-    hello_name = f"Hello {name}!"
-    return hello_name
-    
-my_name = hello_function("Adrian")
-print(my_name)
+def hello(name):
+    print(f"Hello {name}!")
+
+
+if __name__ == "__main__":
+    hello("Adrian")

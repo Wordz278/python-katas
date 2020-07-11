@@ -1,10 +1,12 @@
-def merge(list1=[], list2=[]):    
+def combine(list1=[], list2=[]):
     n = len(list1)
     store_list = []
     for i in range(n):
         store_list.append(list1[i])
         store_list.append(list2[i])
-    return store_list
+    print(store_list)
+    return "done"
 
-combined_list = merge([11,22,33], [1,2,3]) 
-print(combined_list)
+
+if __name__ == "__main__":
+    combine([11, 22, 33], [1, 2, 3])
